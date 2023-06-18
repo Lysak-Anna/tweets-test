@@ -9,7 +9,7 @@ import "./index.css";
 import { persistor, store } from "./redux/store";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
-  <HashRouter basename="/tweets-test">
+  <HashRouter>
     <Provider store={store}>
       <PersistGate persistor={persistor}>
         <App />
